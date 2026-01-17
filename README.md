@@ -6,6 +6,7 @@ estrutura inicial e um layout base para o primeiro build.
 ## Stack
 - React + TypeScript
 - Vite
+- React Router
 
 ## Como rodar
 1) Instale as dependencias:
@@ -20,12 +21,16 @@ estrutura inicial e um layout base para o primeiro build.
 ## Estrutura
 - `index.html`: ponto de entrada.
 - `src/main.tsx`: bootstrap do React e import do CSS.
-- `src/App.tsx`: estrutura do layout (hero, atuacao, metodo, sobre, equipe, contato).
+- `src/App.tsx`: rotas da aplicacao.
+- `src/pages/Home.tsx`: layout principal (hero, atuacao, metodo, sobre, equipe, contato).
+- `src/pages/Contact.tsx`: pagina dedicada de contato.
 - `src/styles.css`: identidade visual, cores, tipografia e responsividade.
+- `src/components/`: cabecalho, rodape e utilitarios.
 - `public/`: assets publicos.
 
 ## Onde editar conteudo
-- Textos e cards principais: `src/App.tsx`
+- Textos e cards principais: `src/pages/Home.tsx`
+- Conteudo da pagina de contato: `src/pages/Contact.tsx`
 - Paleta, fontes, espacamentos e efeitos: `src/styles.css`
 
 ## Observacoes
